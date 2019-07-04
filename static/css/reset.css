@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	font-family: "苹方 中等","微软雅黑";
+	color: #FFFFFF;
+	background: #F3F3F3;
+	font-size:12px;
+	width: 100%;
+	height: 100%;
+}
+ul,li,dl,dt,dd,ol{
+	list-style: none;
+}
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* 浮动 */
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.clear:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/* 防止外边距溢出 */
+.over:before{
+	content: "";
+	display: table;
+}
+body {
+  min-width: 1278px;
+  min-height: 750px;
+  -moz-user-select:none;//针对火狐浏览器，谷歌则-webkit。
+-webkit-user-select:none;
+}
+a:active{
+  opacity: 0.7;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  min-width: 1278px;
+  min-height: 750px;
+  position: absolute;
+  overflow: hidden;
+}
+.layui-layer-dialog .layui-layer-content{ color: #333;}
+
+
+.animation1{
+  animation: shake1 1s;
+  -webkit-animation: shake1 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes shake1
+{
+  from {rotate(-30deg)}
+  to {rotate(30deg)}
+}
+@-webkit-keyframes shake1
+{
+  from {rotate(-30deg)}
+  to {rotate(30deg)}
+}
